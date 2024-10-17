@@ -15,4 +15,16 @@ public class Author {
     public String getFamily() {
         return this.family;
     }
+
+    public boolean equals(Author author) {
+        return this.name.equals(author.getName()) && this.family.equals(author.getFamily());
+    }
+
+    public String toString() {
+        return "Имя автора " + name + " его фамилия " + family;
+    }
+
+    public int hashCod() {
+        return this.hashCode();
+    }
 }

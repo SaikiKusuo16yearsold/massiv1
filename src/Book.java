@@ -25,4 +25,17 @@ public class Book {
         this.yearPublication = year;
     }
 
+    public boolean equals(Book b) {
+        return this.title.equals(b.getTitle()) && this.yearPublication == b.getYearPublication()
+                && this.author.equals(b.getAuthor());
+    }
+
+    public String toString() {
+        return "Название книги " + title + " ее автор " + author + " год выпска " + yearPublication;
+    }
+
+    public int hashCod() {
+        return this.hashCode();
+    }
+
 }
